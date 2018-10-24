@@ -44,6 +44,10 @@ module.exports = {
     resolve: {
       extensions: [ '.tsx', '.ts', '.js' ]
     },
+    devServer: {
+        port:3000,
+        public: 'pjsummersjr.ngrok.io' //Stops 'Invalid host header' errors when using ngrok
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'src', 'index.html')
