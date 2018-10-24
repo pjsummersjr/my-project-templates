@@ -36,7 +36,7 @@ export default class WordAddin extends React.Component<IWordAddinProps, IWordAdd
     loadContent = () => {
         let self = this;
 
-        let resourceUrl:string = "https://localhost:3001/api/opportunities";
+        let resourceUrl:string = "https://pjsummersjr2.ngrok.io/api/opportunities";
         self.props.authenticator.authenticate(this.provider, false).then(
             function(response: any){
                 console.debug(`Requesting data from ${resourceUrl}`);
